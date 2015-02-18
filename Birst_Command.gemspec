@@ -14,7 +14,9 @@ Gem::Specification.new do |s|
   s.description = "Ruby interface to Birst web API"
   s.rubyforge_project = "Birst_Command"
 
-  s.required_ruby_version = '~> 2'
+  s.required_ruby_version = '~> 2.0'
+  s.add_runtime_dependency 'httpi', ["~> 2.1.0"]
+  s.add_runtime_dependency 'rubyntlm', ["~> 0.3.2"]
   s.add_runtime_dependency "savon", ["~> 2.5"]
   s.add_runtime_dependency "httpclient", ["~> 2.3"]
   s.add_runtime_dependency "envcrypt", ["~> 0.1"]
